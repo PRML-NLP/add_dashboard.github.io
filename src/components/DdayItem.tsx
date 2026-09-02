@@ -9,10 +9,10 @@ import {
 } from "../utils/date";
 
 const badgeStyles: Record<DeadlineUrgency, string> = {
-  danger: "bg-red-500/20 text-red-300 ring-red-400/40",
-  warning: "bg-amber-400/20 text-amber-200 ring-amber-300/35",
-  safe: "bg-emerald-500/20 text-emerald-200 ring-emerald-400/35",
-  past: "bg-slate-600/30 text-slate-300 ring-slate-400/30"
+  danger: "bg-rose-100 text-rose-600 ring-rose-200",
+  warning: "bg-amber-100 text-amber-600 ring-amber-200",
+  safe: "bg-emerald-100 text-emerald-600 ring-emerald-200",
+  past: "bg-slate-100 text-slate-500 ring-slate-200"
 };
 
 interface DdayItemProps {
