@@ -28,15 +28,15 @@ function hashString(value: string): number {
 }
 
 const categoryColorPresets = [
-  "bg-sky-400/15 text-sky-200 ring-sky-400/30",
-  "bg-violet-400/15 text-violet-200 ring-violet-400/30",
-  "bg-emerald-400/15 text-emerald-200 ring-emerald-400/30",
-  "bg-amber-400/15 text-amber-200 ring-amber-400/30",
-  "bg-rose-400/15 text-rose-200 ring-rose-400/30",
-  "bg-fuchsia-400/15 text-fuchsia-200 ring-fuchsia-400/30",
-  "bg-cyan-400/15 text-cyan-200 ring-cyan-400/30",
-  "bg-lime-400/15 text-lime-200 ring-lime-400/30",
-  "bg-orange-400/15 text-orange-200 ring-orange-400/30"
+  "bg-sky-100 text-sky-600 ring-sky-200",
+  "bg-violet-100 text-violet-600 ring-violet-200",
+  "bg-emerald-100 text-emerald-600 ring-emerald-200",
+  "bg-amber-100 text-amber-600 ring-amber-200",
+  "bg-rose-100 text-rose-600 ring-rose-200",
+  "bg-fuchsia-100 text-fuchsia-600 ring-fuchsia-200",
+  "bg-cyan-100 text-cyan-600 ring-cyan-200",
+  "bg-lime-100 text-lime-600 ring-lime-200",
+  "bg-orange-100 text-orange-600 ring-orange-200"
 ];
 
 export function getCategoryColorClass(category: string): string {
