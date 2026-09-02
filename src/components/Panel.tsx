@@ -29,12 +29,17 @@ export function Panel({
           <h2 className="font-display text-xl font-semibold text-slate-800 sm:text-2xl xl:text-3xl">
             {title}
           </h2>
+
           {subtitle ? (
             <p className="mt-1 text-sm text-slate-500 sm:text-base">
+              {subtitle}
+            </p>
           ) : null}
         </div>
+
         {rightSlot}
       </header>
+
       <div className="min-h-0 flex-1">{children}</div>
     </article>
   );
