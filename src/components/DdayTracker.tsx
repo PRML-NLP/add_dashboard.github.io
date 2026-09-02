@@ -48,7 +48,7 @@ export function DdayTracker({ deadlines, now, editUrl }: DdayTrackerProps) {
       rightSlot={
         <div className="flex items-center gap-2">
           <EditSheetButton href={editUrl} label="Edit" />
-          <span className="rounded-md bg-cyan-400/10 px-3 py-1.5 text-xs font-medium uppercase tracking-wide text-cyan-200 ring-1 ring-cyan-400/30 sm:text-sm">
+          <span className="rounded-md bg-violet-100 px-3 py-1.5 text-xs font-medium uppercase tracking-wide text-violet-600 ring-1 ring-violet-200 sm:text-sm">
             {filteredDeadlines.length} Showing
           </span>
         </div>
@@ -67,8 +67,8 @@ export function DdayTracker({ deadlines, now, editUrl }: DdayTrackerProps) {
                 className={[
                   "rounded-full px-3 py-1.5 text-xs font-medium uppercase tracking-[0.14em] ring-1 transition sm:text-sm",
                   active
-                    ? "bg-cyan-400/15 text-cyan-100 ring-cyan-300/50"
-                    : "bg-slate-800/60 text-slate-300 ring-slate-600 hover:text-slate-100 hover:ring-slate-400"
+                    ? "bg-violet-100 text-violet-600 ring-violet-200"
+                    : "bg-white text-slate-500 ring-slate-200 hover:bg-violet-50 hover:text-violet-600 hover:ring-violet-200"
                 ].join(" ")}
               >
                 {startCaseCategory(category)}
@@ -79,7 +79,7 @@ export function DdayTracker({ deadlines, now, editUrl }: DdayTrackerProps) {
         </div>
 
         <div className="flex h-full min-h-0 flex-col">
-          <div className="mb-2 grid grid-cols-[minmax(0,2fr)_minmax(0,1.1fr)_auto] gap-3 px-2 text-xs uppercase tracking-[0.16em] text-slate-400 sm:px-1 sm:text-sm">
+          <div className="mb-2 grid grid-cols-[minmax(0,2fr)_minmax(0,1.1fr)_auto] gap-3 px-2 text-xs uppercase tracking-[0.16em] text-slate-500 sm:px-1 sm:text-sm">
             <span>Event</span>
             <span>Deadline</span>
             <span>D-Day</span>
@@ -91,7 +91,7 @@ export function DdayTracker({ deadlines, now, editUrl }: DdayTrackerProps) {
                 <DdayItem key={deadline.id} conference={deadline} now={now} />
               ))
             ) : (
-              <div className="flex h-full items-center justify-center rounded-xl border border-dashed border-slate-700/70 bg-slate-800/40 p-6 text-center text-slate-300">
+              <div className="flex h-full items-center justify-center rounded-xl border border-dashed border-slate-300 bg-slate-50/70 p-6 text-center text-slate-500">
                 No items in {startCaseCategory(activeCategory)}.
               </div>
             )}
