@@ -58,7 +58,7 @@ function App() {
                 Pattern Recognition & Machine Learning Lab
               </p>
               <h1 className="font-display text-3xl font-semibold tracking-tight text-slate-100 sm:text-4xl xl:text-5xl">
-                Speech Processing Team
+                ADD (Natural Language Processing) Team
               </h1>
             </div>
             <div className="text-left lg:text-right">
