@@ -27,7 +27,7 @@ export function DdayItem({ conference, now }: DdayItemProps) {
   const category = normalizeDeadlineCategory(conference.category);
 
   return (
-    <div className="grid grid-cols-[minmax(0,2fr)_minmax(0,1.1fr)_auto] items-center gap-3 rounded-xl border border-slate-700/60 bg-slate-800/50 px-3 py-3 sm:px-4 sm:py-4">
+    <div className="grid grid-cols-[minmax(0,2fr)_minmax(0,1.1fr)_auto] items-center gap-3 rounded-xl border border-violet-100 bg-gradient-to-r from-violet-50/70 to-pink-50/60 px-3 py-3 sm:px-4 sm:py-4">
       <div className="min-w-0">
         <div className="mb-2 flex flex-wrap items-center gap-2">
           <span
@@ -37,12 +37,12 @@ export function DdayItem({ conference, now }: DdayItemProps) {
           </span>
         </div>
 
-        <p className="truncate text-lg font-semibold text-slate-100 sm:text-xl xl:text-2xl">
+        <p className="truncate text-lg font-semibold text-slate-800 sm:text-xl xl:text-2xl">
           {conference.conference}
         </p>
       </div>
 
-      <p className="text-sm text-slate-300 sm:text-base xl:text-lg">
+      <p className="text-sm text-slate-500 sm:text-base xl:text-lg">
         {formatDeadlineDate(conference.deadline)}
       </p>
 
